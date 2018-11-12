@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap Visualization Dashboard</title>
-
+    
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -21,33 +22,76 @@
 
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">Latitude</a>
             </div>
-        
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="max_temperature.html">Max Temperature</a></li>
-                        <li><a href="humidity.html">Humidity</a></li>
-                        <li><a href="cloudiness.html">Cloudiness</a></li>
-                        <li><a href="wind_speed.html">Wind Speed</a></li>
-                    </ul>
-                </li>
-                <li><a href="comparison.html">Comparison</a></li>
-                <li><a href="data.html">Data</a></li>
-            </ul>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right ">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="max_temperature.html">Max Temperature</a></li>
+                            <li><a href="humidity.html">Humidity</a></li>
+                            <li><a href="cloudiness.html">Cloudiness</a></li>
+                            <li><a href="wind_speed.html">Wind Speed</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="comparison.html">Comparison</a></li>
+                    <li><a href="data.html">Data</a></li>
+                </ul>
+            </div> <!-- /.navbar-collapse -->
+
         </div><!-- /.container-fluid -->
     </nav>
                 
+                
     <div class="container-fluid">
 
-        <div class="row">
+            <div class="row">
+    
+                <div class="col-md-6 col-sm-12 pad top" >
+        
+                    <div class="box-container">
 
+                        <div class="page-header">
+                            <h1 class="box-title">Wind Speed</h1>
+                        </div>
+    
+                        <div>
+                            <img src="Images/Fig1.png" alt="Latitude vs. Wind Speed" width="100%" height="60%">
+                        </div>
+                        <div>
+                            <p>There is no strong relationship between latitude and wind speed. 
+                                However, in northern hemispheres there is a flurry of cities with over 20 mph of wind. 
+                            </p> 
+                            <br>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                <div class="col-md-5 col-sm-12 pad top">
+                    <div class="box-container">
+                        <div class="page-header">
+                            <h2 class="box-title">Visualizations</h2>
+                        </div>
+    
+                        <a href="max_temperature.html"><img src="Images/Fig1.png" alt="Latitude vs. Max Temperature" width="180" height="160"></a>
+                        <a href="humidity.html"><img src="Images/Fig2.png" alt="Latitude vs. Humidity" width="180" height="160"></a>
+                        <a href="cloudiness.html"><img src="Images/Fig3.png" alt="Latitude vs. Cloudiness" width="180" height="160"></a>
+                        <a href="wind_speed.html"><img src="Images/Fig4.png" alt="Latitude vs. Wind Speed" width="180" height="160"></a>
+                    </div>    
+                </div>
+        
+            </div>
+    
         </div>
-
-    </div>
+    
 
 </body>
 </html>

@@ -12,8 +12,50 @@ body {
     align-content: center;
   }
 
-.page-title {
-    /* color: teal; */
+.box{
+    padding: 30px;
+    background: white;
+    margin-top:0px;
+    margin-left:40px;
+    margin-right:50px;
+    margin-bottom:10px;
+    align-content: right;
+}
+
+.box-title {
+    color: rgb(12, 173, 167);
     font-family: "Times New Roman";
     font-weight: bold;
 }
+
+.box-title-center {
+    color: rgb(12, 173, 167);
+    font-family: "Times New Roman";
+    font-weight: bold;
+    text-align: center;
+}
+
+.description {
+    font-size: "4.5"
+}
+
+.navbar-brand {
+    background-color: rgb(12, 173, 167);
+    font-family: times new roman;
+    font-weight: bold;
+    font-size: 20;
+    color:white;
+    text-emphasis-color: white;
+}
+
+@media (max-width: 480px) {
+    .navbar {
+            background-color: rgb(12, 173, 167);
+          }
+          
+    .navbar-brand {
+            background-color: white;
+            font-family: times new roman;
+            font-weight: bold;
+            color: rgb(12, 173, 167);
+    }
