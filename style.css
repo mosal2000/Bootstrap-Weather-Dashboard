@@ -3,10 +3,10 @@ body {
 }
 
 .box-container{
-    padding: 30px;
+    padding: 10px;
     background: white;
     margin-top:0px;
-    margin-left:40px;
+    margin-left:20px;
     margin-right:5px;
     margin-bottom:10px;
     align-content: center;
@@ -36,7 +36,8 @@ body {
 }
 
 .description {
-    font-size: "4.5"
+    font-size: "4.5"; 
+	color: gray;
 }
 
 .navbar-brand {
@@ -49,13 +50,14 @@ body {
 }
 
 @media (max-width: 480px) {
-    .navbar {
-            background-color: rgb(12, 173, 167);
-          }
-          
-    .navbar-brand {
-            background-color: white;
-            font-family: times new roman;
-            font-weight: bold;
-            color: rgb(12, 173, 167);
+.navbar {
+	background-color: rgb(12, 173, 167);
+	}
+	  
+.navbar-brand {
+	background-color: white;
+	font-family: times new roman;
+	font-weight: bold;
+	color: rgb(12, 173, 167);
     }
+}
