@@ -44,8 +44,13 @@ body {
   background-color: #158fa5;
   font-family: 'Vendana';
   font-weight: bold;
-  font-size: 35px;
-  color: rgb(233, 232, 232) !important;
+  font-size: 30px;
+  color: white !important;
+}
+
+.navbar-brand:hover {
+  background-color: #40d2e9 !important;
+  color: white !important;
 }
 
 .navbar-header {
