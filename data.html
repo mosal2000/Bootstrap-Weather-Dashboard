@@ -16,49 +16,56 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-default">
-        <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Latitude</a>
+        </div>
 
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Latitude</a>
-            </div>
-
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right ">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="max_temperature.html">Max Temperature</a></li>
-                            <li><a href="humidity.html">Humidity</a></li>
-                            <li><a href="cloudiness.html">Cloudiness</a></li>
-                            <li><a href="wind_speed.html">Wind Speed</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="comparison.html">Comparison</a></li>
-                    <li><a href="data.html">Data</a></li>
-                </ul>
-            </div> <!-- /.navbar-collapse -->
-
-        </div><!-- /.container-fluid -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right  navbar-right-custom">
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Plots <span class="caret"></span
+              ></a>
+              <ul class="dropdown-menu">
+                <li><a href="max_temperature.html">Max Temperature</a></li>
+                <li><a href="humidity.html">Humidity</a></li>
+                <li><a href="cloudiness.html">Cloudiness</a></li>
+                <li><a href="wind_speed.html">Wind Speed</a></li>
+              </ul>
+            </li>
+            <li><a href="comparison.html">Comparison</a></li>
+            <li><a href="data.html">Data</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     
     <div class="container-fluid">
-
         <div class="row">
-
             <div class="col-md-12">
                 <div class="box-container">
                     <div class="page-header">
                         <h1 class="box-title">Data</h1>
                     </div>
-
                     <div>
                         <p class="table-header">The following table includes all of the data used for plotting during this project.</p>
                         <br>

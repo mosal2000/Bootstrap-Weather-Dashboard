@@ -1,83 +1,88 @@
 body {
-    background-color: lightgrey;
+  background-color: rgb(173, 188, 201);
 }
 
-.box-container{
-    padding: 10px;
-    background: white;
-    margin-top:0px;
-    margin-left:20px;
-    margin-right:5px;
-    margin-bottom:10px;
-    align-content: center;
-  }
+.box-container {
+  padding: 10px;
+  background: white;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  align-content: center;
+  color: #095c6b;
+}
 
 .box-title {
-    color: #1faf9d;
-    font-family: "Vendana";
-    font-weight: bold;
+  color: #158fa5;
+  font-family: 'Vendana';
+  font-weight: bold;
 }
 
 .bold_text {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .white_text {
-    color: white;
+  color: white;
 }
 
 .box-title-center {
-    color: #1faf9d;
-    font-family: "Vendana";
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
+  color: #158fa5;
+  font-family: 'Vendana';
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
 }
 
 .description {
-    font-size: "4.5"; 
-	color: gray;
+  font-size: '4.5';
+  color: gray;
 }
 
 .navbar-brand {
-    background-color: #9ed3d0;
-    font-family: "Vendana";
+  background-color: #158fa5;
+  font-family: 'Vendana';
+  font-weight: bold;
+  font-size: 35px;
+  color: rgb(233, 232, 232) !important;
+}
+
+.navbar-header {
+  color: white;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    background-color: #158fa5;
+    color: rgb(233, 232, 232) !important;
+  }
+
+  .navbar-collapse {
+    background-color: rgb(233, 232, 232);
+  }
+
+  .navbar-brand {
+    background-color: #158fa5;
+    font-family: 'Vendana';
     font-weight: bold;
-    font-size: 35px;
-    color:white;
-}
+    font-size: 30px;
+    color: rgb(233, 232, 232) !important;
+  }
 
-.navbar-header{
-    color:white;
-}
+  .box-title-center {
+    color: #158fa5;
+    font-family: 'Vendana';
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+  }
 
-@media (max-width: 480px) {
-	.navbar {
-		background-color: #9ed3d0;
-		}
-		  
-	.navbar-brand {
-		background-color: #9ed3d0;
-		font-family: "Vendana";
-        font-weight: bold;
-        font-size: 30px;
-		color: white;
-		}
+  h1 {
+    font-size: 25px;
+  }
 
-    .box-title-center {
-        color: #1faf9d;
-        font-family: "Vendana";
-        font-weight: bold;
-        text-align: center;
-        font-size: 10px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
+  h2 {
+    font-size: 20px;
+  }
 }
